@@ -1,0 +1,33 @@
+---
+import Base from "@/layouts/base.astro";
+import Name from "@/components/name";
+import { getCollection } from "astro:content";
+import { rando } from "@/utils";
+import { colors } from "@/utils/constants";
+
+const names = await getCollection("names");
+
+const list = names
+  .map((n) => ({
+    id: n.id,
+    name: n.data.name,
+    color: rando(colors, [n.data.name, names.indexOf(n)]),
+  }))
+  .sort((a, b) => a.name.localeCompare(b.name));
+---
+
+<Base headline="Names" color="red-400" href="/" title="">
+  <ul class="space-y-2 text-left hover:*:opacity-50">
+    {
+      list.map((name) => (
+        <li class="hover:opacity-100! transition-opacity">
+          <Name id={name.id} aria-hidden="true">
+            <span class={`block text-${name.color} hover:underline`}>
+              {name.name}
+            </span>
+          </Name>
+        </li>
+      ))
+    }
+  </ul>
+</Base>

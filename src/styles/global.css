@@ -1,1 +1,72 @@
 @import "tailwindcss";
+
+@layer base {
+  :root {
+    @apply bg-zinc-900 text-shadow-white px-[10vw] py-[5vh] text-zinc-100;
+  }
+}
+
+@layer utilities {
+  .font-headline {
+    @apply font-sans;
+    font-family: "Tilt Warp Variable";
+  }
+
+  .font-name {
+    @apply text-zinc-200 lowercase font-mono font-light tracking-tight;
+  }
+
+  .marquee-text {
+    overflow: hidden;
+  }
+  .marquee-text-track {
+    display: flex;
+    padding-left: 3rem;
+    gap: 3rem;
+    width: max-content;
+    animation-name: marquee-move-text;
+    animation-duration: 45s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-direction: normal;
+    will-change: transform;
+  }
+
+  .marquee-text-track:nth-of-type(even) {
+    animation-name: marquee-move-text-reverse;
+  }
+
+  .marquee-text-track:hover {
+    animation-play-state: paused;
+  }
+
+  .marquee-text:hover .marquee-text-track:not(:hover) {
+    animation-play-state: paused;
+    opacity: 0.5;
+  }
+
+  @keyframes marquee-move-text {
+    50% {
+      transform: translateX(-50%);
+    }
+
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes marquee-move-text-reverse {
+    0% {
+      transform: translateX(-50%);
+    }
+
+    50% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
