@@ -8,6 +8,12 @@ import { getCollection } from "astro:content";
 const names = await getCollection("names");
 ---
 
-<Base headline="Names" color="text-red-400" href="/names" title="">
+<Base
+  disclaimer={true}
+  headline="Names"
+  color="text-red-400"
+  href="/names"
+  title=""
+>
   <Wall names={names.sort(randosort).map((n) => [n.id, n.data.name])} />
 </Base>

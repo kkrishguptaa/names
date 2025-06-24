@@ -41,7 +41,7 @@ export default function Wall({ names }: { names: Array<[string, string]> }) {
   }
 
   return (
-    <div className="hover:*:*:opacity-50 my-8 marquee w-full flex flex-col gap-4 divide-y divide-transparent">
+    <div className="hover:*:*:opacity-50 mt-2 mb-8 marquee w-full flex flex-col gap-4 divide-y divide-transparent">
       {strips.map((strip, index) => (
         <div
           key={index}

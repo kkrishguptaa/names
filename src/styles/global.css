@@ -1,8 +1,26 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @layer base {
-  :root {
-    @apply bg-zinc-900 text-shadow-white px-[10vw] py-[5vh] text-zinc-100;
+  body {
+    @apply flex flex-col bg-zinc-900 text-shadow-white text-zinc-100 min-h-screen justify-items-start;
+  }
+
+  body > main,
+  body > header {
+    @apply px-[10vw] flex-none;
+  }
+
+  body > main {
+    @apply mt-4 mb-8;
+  }
+
+  body > main > article {
+    @apply prose prose-invert;
+  }
+
+  body > footer {
+    @apply flex-[100%];
   }
 }
 

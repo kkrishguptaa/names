@@ -2,8 +2,9 @@
 import "@fontsource-variable/tilt-warp";
 import "@/styles/global.css";
 import Header from "@/components/header";
+import Footer from "@/components/footer";
 
-const { headline, title, href, color } = Astro.props;
+const { headline, disclaimer, title, href, color } = Astro.props;
 ---
 
 <html lang="en">
@@ -14,9 +15,10 @@ const { headline, title, href, color } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <Header name={headline} color={color} href={href} />
+    <Header name={headline} disclaimer={disclaimer} color={color} href={href} />
     <main>
       <slot />
     </main>
+    <Footer />
   </body>
 </html>
