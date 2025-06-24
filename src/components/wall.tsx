@@ -41,11 +41,11 @@ export default function Wall({ names }: { names: Array<[string, string]> }) {
   }
 
   return (
-    <div className="hover:*:*:opacity-50 my-8 marquee-text w-full flex flex-col gap-4 divide-y divide-transparent">
+    <div className="hover:*:*:opacity-50 my-8 marquee w-full flex flex-col gap-4 divide-y divide-transparent">
       {strips.map((strip, index) => (
         <div
           key={index}
-          className="marquee-text-track flex flex-row items-center w-full"
+          className="marquee-track flex flex-row items-center w-full"
         >
           {strip.sort(randosort).map((name, nameIndex) => (
             <Name id={name.id} key={nameIndex}>

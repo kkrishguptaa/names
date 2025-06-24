@@ -16,10 +16,10 @@
     @apply text-zinc-200 lowercase font-mono font-light tracking-tight;
   }
 
-  .marquee-text {
+  .marquee {
     overflow: hidden;
   }
-  .marquee-text-track {
+  .marquee-track {
     display: flex;
     padding-left: 3rem;
     gap: 3rem;
@@ -33,15 +33,15 @@
     will-change: transform;
   }
 
-  .marquee-text-track:nth-of-type(even) {
+  .marquee-track:nth-of-type(even) {
     animation-name: marquee-move-text-reverse;
   }
 
-  .marquee-text-track:hover {
+  .marquee-track:hover {
     animation-play-state: paused;
   }
 
-  .marquee-text:hover .marquee-text-track:not(:hover) {
+  .marquee:hover .marquee-track:not(:hover) {
     animation-play-state: paused;
     opacity: 0.5;
   }
