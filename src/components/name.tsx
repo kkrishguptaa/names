@@ -7,7 +7,7 @@ export default function Name({
 }) {
   return (
     <a
-      href={`/names/~/${id}`}
+      href={`/names/${id}`}
       className="font-name transition hover:scale-120! hover:opacity-100! text-xl text-white"
     >
       {children}

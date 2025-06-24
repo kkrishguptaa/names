@@ -1,0 +1,22 @@
+---
+import Base from "@/layouts/base.astro";
+import { getCollection, getEntry } from "astro:content";
+
+export async function getStaticPaths() {
+  const collection = await getCollection("names");
+
+  return collection.map((item) => ({
+    params: { name: item.id },
+  }));
+}
+
+const { name: id } = Astro.params;
+
+const name = await getEntry("names", id)!;
+
+const { Content } = await import(`../content/${id}.mdx`);
+---
+
+<Base href={`/names/${name.id}`} headline={name.data.name} title="">
+  <Content />
+</Base>
