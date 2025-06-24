@@ -14,41 +14,30 @@ export default function Header({
   const colorClass = rando(colors, [name, Math.random()]);
   return (
     <header className="my-8">
-      <a
-        href={href}
-        className={`hover:underline decoration-${color || colorClass}`}
-      >
+      <a href={href} className={`hover:underline  ${color || colorClass}`}>
         <h1
-          className={`font-headline text-${color || colorClass} text-7xl ${
-            href === "/" ? "italics" : ""
-          } lowercase font-black tracking-tight`}
+          className={`font-headline text-7xl lowercase font-black tracking-tight`}
         >
           {name}
         </h1>
       </a>
       <nav className="flex flex-row gap-8 my-8">
         <a
-          href="/"
-          className={`font-headline text-${
+          href="/names"
+          className={`font-headline ${
             color || colorClass
-          } text-3xl italic lowercase font-bold tracking-tight inline-flex items-center hover:scale-120 transition-transform will-change-transform`}
+          } text-3xl lowercase font-bold tracking-tight inline-flex items-center hover:scale-120 transition-transform will-change-transform`}
         >
           <HomeIcon />
         </a>
         <a
-          href="/list"
-          className={`group font-headline text-${
+          href="/names/list"
+          className={`group font-headline ${
             color || colorClass
-          } text-3xl italic lowercase font-bold tracking-tight`}
+          } text-3xl lowercase font-bold tracking-tight`}
         >
           <span aria-hidden="true">/</span>
-          <span
-            className={`group-hover:underline decoration-${
-              color || colorClass
-            }`}
-          >
-            List
-          </span>
+          <span className={`group-hover:underline`}>List</span>
         </a>
       </nav>
     </header>

@@ -1,15 +1,15 @@
 export const colors = [
-  "green-400",
-  "blue-400",
-  "yellow-400",
-  "pink-400",
-  "purple-400",
-  "cyan-400",
-  "orange-400",
-  "lime-400",
-  "emerald-400",
-  "fuchsia-400",
-  "sky-400",
+  "text-green-400",
+  "text-blue-400",
+  "text-yellow-400",
+  "text-pink-400",
+  "text-purple-400",
+  "text-cyan-400",
+  "text-orange-400",
+  "text-lime-400",
+  "text-emerald-400",
+  "text-fuchsia-400",
+  "text-sky-400",
 ];
 
 export const size = [

@@ -49,23 +49,17 @@ export default function Wall({ names }: { names: Array<[string, string]> }) {
         >
           {strip.sort(randosort).map((name, nameIndex) => (
             <Name id={name.id} key={nameIndex}>
-              <span className={`text-${name.color} ${name.size}`}>
-                {name.name}
-              </span>
+              <span className={`${name.color} ${name.size}`}>{name.name}</span>
             </Name>
           ))}
           {strip.sort(randosort).map((name, nameIndex) => (
             <Name id={name.id} aria-hidden="true" key={`1-${nameIndex}`}>
-              <span className={`text-${name.color} ${name.size}`}>
-                {name.name}
-              </span>
+              <span className={`${name.color} ${name.size}`}>{name.name}</span>
             </Name>
           ))}
           {strip.sort(randosort).map((name, nameIndex) => (
             <Name id={name.id} aria-hidden="true" key={`2-${nameIndex}`}>
-              <span className={`text-${name.color} ${name.size}`}>
-                {name.name}
-              </span>
+              <span className={`${name.color} ${name.size}`}>{name.name}</span>
             </Name>
           ))}
         </div>

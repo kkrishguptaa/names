@@ -16,13 +16,13 @@ const list = names
   .sort((a, b) => a.name.localeCompare(b.name));
 ---
 
-<Base headline="Names" color="red-400" href="/" title="">
+<Base headline="Names" color="text-red-400" href="/names" title="">
   <ul class="space-y-2 text-left hover:*:opacity-50">
     {
       list.map((name) => (
         <li class="hover:opacity-100! transition-opacity">
           <Name id={name.id} aria-hidden="true">
-            <span class={`block text-${name.color} hover:underline`}>
+            <span class={`block ${name.color} hover:underline`}>
               {name.name}
             </span>
           </Name>
