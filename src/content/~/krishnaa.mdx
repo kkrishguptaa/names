@@ -2,4 +2,24 @@
 name: Krishnaa
 ---
 
+import clsx from "clsx";
+import { rando } from "@/utils";
+import { colors, size } from "@/utils/constants";
 
+<article>
+This is not my birth name, but every single person just mispronounced [Krishna](./krishna) as Krishnaa. I did some research on this name.
+
+This name belongs to Draupadi (Panchali), the wife of the Pandavas in the Indian epic Mahabharata. She is also known as Krishnaa, which is a feminine form of Krishna. The name Krishnaa means "dark" or "black," and it is derived from the Sanskrit word "Krishna," which is one of the names of Lord Vishnu.
+
+She is considered one of the forms of the goddess Shakti, the divine feminine energy, which is fascinating because I was born on the first day of Navratri, the festival when different forms of Shakti are worshipped as their energies enter the world.
+
+<div className="marquee">
+<span className="marquee-track flex items-center">
+{new Array(40).fill("krishnaa").map((name, index) => (
+  <span key={index} className={clsx(rando(colors, [name, index]), rando(size, [name, index]), "hover:scale-110 transition-transform")}>
+    {name}
+  </span>
+))}
+</span>
+</div>
+</article>

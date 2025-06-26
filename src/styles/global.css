@@ -16,7 +16,9 @@
   }
 
   body > main > article {
-    @apply prose prose-invert;
+    @apply prose prose-invert prose-zinc;
+
+    max-width: max-content;
   }
 
   body > footer {

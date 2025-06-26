@@ -6,12 +6,13 @@ export default function ImageGallery({ images }: { images: ImageMetadata[] }) {
     "rotate-2",
     "-rotate-2",
     "rotate-2",
+    "-rotate-2",
     "rotate-2",
     "-rotate-2",
   ];
 
   return (
-    <div className="mt-16 sm:mt-20 marquee">
+    <div className="marquee">
       <div className="hover:*:grayscale marquee-track -my-4 flex w-full justify-center gap-5 py-4 sm:gap-8">
         {images.map((image, i) => (
           <div
