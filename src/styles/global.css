@@ -6,23 +6,25 @@
     @apply flex flex-col bg-zinc-900 text-shadow-white text-zinc-100 min-h-screen justify-items-start;
   }
 
+  body > header {
+    @apply flex-none;
+  }
+
   body > main,
   body > header {
-    @apply px-[10vw] flex-none;
+    @apply px-[10vw];
   }
 
   body > main {
-    @apply mt-4 mb-8;
+    @apply mt-4 mb-8 flex-1;
   }
 
   body > main > article {
-    @apply prose prose-invert prose-zinc;
-
-    max-width: max-content;
+    @apply prose prose-invert prose-zinc max-w-max;
   }
 
   body > footer {
-    @apply flex-[100%];
+    @apply flex-none;
   }
 }
 
