@@ -11,8 +11,6 @@ import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://kkrishguptaa.github.io",
-  base: "names",
   integrations: [react(), partytown(), sentry(), sitemap(), mdx()],
 
   vite: {
