@@ -12,7 +12,7 @@ export default async function Footer() {
           <p>
             <a
               className="hover:underline decoration-wavy text-red-400 transition text-lg"
-              href="https://github.com/kkrishguptaa/names/issues/new"
+              href="https://github.com/kkrishguptaa/issues/new"
             >
               give me another name!
             </a>

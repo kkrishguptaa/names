@@ -18,6 +18,6 @@ const name = await getEntry("names", id)!;
 const { Content } = await import(`../../content/~/${id}.mdx`);
 ---
 
-<Base href={`/names/~/${name.id}`} headline={name.data.name} title="">
+<Base href={`/~/${name.id}`} headline={name.data.name} title="">
   <Content />
 </Base>

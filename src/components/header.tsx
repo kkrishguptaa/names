@@ -33,7 +33,7 @@ export default function Header({
           <HomeIcon />
         </a>
         <a
-          href="/names/list"
+          href="/list"
           className={`group font-headline ${
             color || colorClass
           } text-3xl lowercase font-bold tracking-tight`}
