@@ -25,7 +25,7 @@ export default function Header({
       </a>
       <nav className="flex flex-row gap-8 mt-4">
         <a
-          href="/names"
+          href="/"
           className={`font-headline ${
             color || colorClass
           } text-3xl lowercase font-bold tracking-tight inline-flex items-center hover:scale-120 transition-transform will-change-transform`}
