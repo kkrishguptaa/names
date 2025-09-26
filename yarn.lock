@@ -82,9 +82,9 @@
     prismjs "^1.30.0"
 
 "@astrojs/react@^4.3.0":
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/@astrojs/react/-/react-4.3.1.tgz#4357502f6bebb9ae0b42761b211db354daab6fc7"
-  integrity sha512-Jhv35TsDHuQLvwof2z10P3g1s9wIR4UN9jE7O4NZBJNXOt/+qk+L0rY9th4SX7VzccKmRltUGxAhI1cXH52gXw==
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/@astrojs/react/-/react-4.4.0.tgz#e789e02c1537f89c49934f8a6812ef564e5ce57a"
+  integrity sha512-RzblkVImAFdV1C0AWsSWzS70Z0FMtW2p0XXkNYu3QePfyVJta3JIy8m8jY8271etaCZtpFjsE2UaiHGZIBm6nw==
   dependencies:
     "@vitejs/plugin-react" "^4.7.0"
     ultrahtml "^1.6.0"
@@ -1771,9 +1771,9 @@ astring@^1.8.0:
   integrity sha512-LElXdjswlqjWrPpJFg1Fx4wpkOCxj1TDHlSV4PlaRxHGWko024xICaa97ZkMfs6DRKlCguiAI+rbXv5GWwXIkg==
 
 astro@^5.10.0:
-  version "5.13.11"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-5.13.11.tgz#c2556af8bf91e500ea041da3d192a99e29ff4d44"
-  integrity sha512-qKB+95GtyJSwVn5TDi31FTIcsohzA/nLhyATWn5VWqok1VLzZvm/1KHCk4tNElSrAQ5BisxUIMZWTh+B4X2JvQ==
+  version "5.14.0"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-5.14.0.tgz#f1cdb5210126277bc91794dfba686f5c422106e5"
+  integrity sha512-p41jPzs9XhcVBPzp8ZwjU4SgxSyjgkzMq3NToRIn4CPbE/f9rb1cba5+N6TRk4A8yBudEU6MFzCMFWer7kjW3Q==
   dependencies:
     "@astrojs/compiler" "^2.12.2"
     "@astrojs/internal-helpers" "0.7.3"
@@ -1866,9 +1866,9 @@ base64-js@^1.1.2, base64-js@^1.3.0:
   integrity sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==
 
 baseline-browser-mapping@^2.8.3:
-  version "2.8.6"
-  resolved "https://registry.yarnpkg.com/baseline-browser-mapping/-/baseline-browser-mapping-2.8.6.tgz#c37dea4291ed8d01682f85661dbe87967028642e"
-  integrity sha512-wrH5NNqren/QMtKUEEJf7z86YjfqW/2uw3IL3/xpqZUC95SSVIFXYQeeGjL6FT/X68IROu6RMehZQS5foy2BXw==
+  version "2.8.7"
+  resolved "https://registry.yarnpkg.com/baseline-browser-mapping/-/baseline-browser-mapping-2.8.7.tgz#4d3606fdb1738fd902da40c5fcc0595e87cec044"
+  integrity sha512-bxxN2M3a4d1CRoQC//IqsR5XrLh0IJ8TCv2x6Y9N0nckNz/rTjZB3//GGscZziZOxmjP55rzxg/ze7usFI9FqQ==
 
 binary-extensions@^2.0.0:
   version "2.3.0"
@@ -1932,9 +1932,9 @@ camelcase@^8.0.0:
   integrity sha512-8WB3Jcas3swSvjIeA2yvCJ+Miyz5l1ZmB6HFb9R1317dt9LCQoswg/BGrmAmkWVEszSrrg4RwmO46qIm2OEnSA==
 
 caniuse-lite@^1.0.30001741:
-  version "1.0.30001743"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001743.tgz#50ff91a991220a1ee2df5af00650dd5c308ea7cd"
-  integrity sha512-e6Ojr7RV14Un7dz6ASD0aZDmQPT/A+eZU+nuTNfjqmRrmkmQlnTNWH0SKmqagx9PeW87UVqapSurtAXifmtdmw==
+  version "1.0.30001745"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001745.tgz#ab2a36e3b6ed5bfb268adc002c476aab6513f859"
+  integrity sha512-ywt6i8FzvdgrrrGbr1jZVObnVv6adj+0if2/omv9cmR2oiZs30zL4DIyaptKcbOrBdOIc74QTMoJvSE2QHh5UQ==
 
 ccount@^2.0.0:
   version "2.0.1"
@@ -2166,9 +2166,9 @@ dset@^3.1.4:
   integrity sha512-2QF/g9/zTaPDc3BjNcVTGoBbXBgYfMTTceLaYcFJ/W9kggFUkhxD/hMEeuLKbugyef9SqAx8cpgwlIP/jinUTA==
 
 electron-to-chromium@^1.5.218:
-  version "1.5.223"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.223.tgz#cf9b1aebba1c8ee5e50d1c9e198229e15bc87b28"
-  integrity sha512-qKm55ic6nbEmagFlTFczML33rF90aU+WtrJ9MdTCThrcvDNdUHN4p6QfVN78U06ZmguqXIyMPyYhw2TrbDUwPQ==
+  version "1.5.224"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.224.tgz#dbc6827cb3d41d7293811d6d8af53114804e0ed1"
+  integrity sha512-kWAoUu/bwzvnhpdZSIc6KUyvkI1rbRXMT0Eq8pKReyOyaPZcctMli+EgvcN1PAvwVc7Tdo4Fxi2PsLNDU05mdg==
 
 emoji-regex@^10.3.0:
   version "10.5.0"
